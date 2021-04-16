@@ -10,8 +10,8 @@ using namespace std;
 # define DECLARATIONFLOAT "DataType identifi Equal NumFlot PuntCom" //D
 # define DECLARATIONSTRING "DataType identifi Equal Comilla identifi Comilla PuntCom" //D
 # define DECLARATIONSTRING2 "DataType identifi Equal Comilla Comilla PuntCom" //D
-# define DECLARATIONLIBRARY "Gato include OpRel indentifi OpRel" //D
-# define DECLARATIONLIBRARY2 "Gato include Comilla indentifi Comilla" //D
+# define DECLARATIONLIBRARY "Gato include OpRel identifi OpRel" //D
+# define DECLARATIONLIBRARY2 "Gato include Comilla identifi Comilla" //D
 ///Expreciones aritmeticas
 # define EXPRESSION "NumInt OpArit NumInt" //D
 # define EXPRESSION2 "NumFlot OpArit NumFlot" //D
