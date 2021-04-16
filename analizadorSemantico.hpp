@@ -42,8 +42,8 @@ using namespace std;
 //condicionales else
 # define CONDITIONAL9 "else LlaveAbier LlaveCerra" //D
 //ciclos
-# define CICLOFOR "for ParenAbre DataType identifi Equal NumInt PuntCom identifi OpRel NumInt PuntCom identifi OpArit Equal INVALID LlaveAbier LlaveCerra" //D
-# define CICLOFOR2 "for ParenAbre DataType identifi Equal NumInt PuntCom identifi OpRel identifi PuntCom identifi OpArit Equal INVALID LlaveAbier LlaveCerra" //D
+# define CICLOFOR "for ParenAbre DataType identifi Equal NumInt PuntCom identifi OpRel NumInt PuntCom identifi OpArit Equal NumInt ParenCerra LlaveAbier LlaveCerra" //D
+# define CICLOFOR2 "for ParenAbre DataType identifi Equal NumInt PuntCom identifi OpRel identifi PuntCom identifi OpArit Equal NumInt ParenCerra LlaveAbier LlaveCerra" //D
 # define CICLOWHILE "while ParenAbre identifi OpRel NumInt ParenCerra LlaveAbier LlaveCerra" //D
 # define CICLOWHILE2 "while ParenAbre identifi OpRel identifi ParenCerra LlaveAbier LlaveCerra" //D
 # define CICLOWHILE3 "while ParenAbre NumInt OpRel NumInt ParenCerra LlaveAbier LlaveCerra" //D
