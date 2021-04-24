@@ -21,15 +21,31 @@ using namespace std;
 # define EXPRESSION6 "ParenAbre NumFlot OpArit NumFlot ParenCerra" //D
 # define EXPRESSION7 "ParenAbre NumFlot OpArit NumInt ParenCerra" //D
 # define EXPRESSION8 "ParenAbre NumInt OpArit NumFlot ParenCerra" //D
+# define EXPRESSION9 "NumInt OpArit ParenAbre NumInt OpArit NumInt ParenCerra" //D
+# define EXPRESSION10 "NumInt OpArit ParenAbre NumFlot OpArit NumFlot ParenCerra" //D
+# define EXPRESSION11 "NumInt OpArit ParenAbre NumFlot OpArit NumInt ParenCerra" //D
+# define EXPRESSION12 "NumInt OpArit ParenAbre NumInt OpArit NumFlot ParenCerra" //D
+# define EXPRESSION13 "NumFlot OpArit ParenAbre NumInt OpArit NumInt ParenCerra" //D
+# define EXPRESSION14 "NumFlot OpArit ParenAbre NumFlot OpArit NumFlot ParenCerra" //D
+# define EXPRESSION15 "NumFlot OpArit ParenAbre NumFlot OpArit NumInt ParenCerra" //D
+# define EXPRESSION16 "NumFlot OpArit ParenAbre NumInt OpArit NumFlot ParenCerra" //D
+# define EXPRESSION17 "ParenAbre NumInt OpArit NumInt ParenCerra OpArit NumInt" //D
+# define EXPRESSION18 "ParenAbre NumFlot OpArit NumFlot ParenCerra OpArit NumInt" //D
+# define EXPRESSION19 "ParenAbre NumFlot OpArit NumInt ParenCerra OpArit NumInt" //D
+# define EXPRESSION20 "ParenAbre NumInt OpArit NumFlot ParenCerra OpArit NumInt" //D
+# define EXPRESSION21 "ParenAbre NumInt OpArit NumInt ParenCerra OpArit NumFlot" //D
+# define EXPRESSION22 "ParenAbre NumFlot OpArit NumFlot ParenCerra OpArit NumFlot" //D
+# define EXPRESSION23 "ParenAbre NumFlot OpArit NumInt ParenCerra OpArit NumFlot" //D
+# define EXPRESSION24 "ParenAbre NumInt OpArit NumFlot ParenCerra OpArit NumFlot" //D
 ///Expreciones relacionales
-# define EXPRESSION9 "NumInt OpRel NumInt" //D
-# define EXPRESSION10 "NumFlot OpRel NumFlot" //D
-# define EXPRESSION11 "NumFlot OpRel NumInt" //D
-# define EXPRESSION12 "NumInt OpRel NumFlot" //D
-# define EXPRESSION13 "ParenAbre NumInt OpRel NumInt ParenCerra" //D
-# define EXPRESSION14 "ParenAbre NumFlot OpRel NumFlot ParenCerra" //D
-# define EXPRESSION15 "ParenAbre NumFlot OpRel NumInt ParenCerra" //D
-# define EXPRESSION16 "ParenAbre NumInt OpRel NumFlot ParenCerra"  //D
+# define EXPRESSION25 "NumInt OpRel NumInt" //D
+# define EXPRESSION26 "NumFlot OpRel NumFlot" //D
+# define EXPRESSION27 "NumFlot OpRel NumInt" //D
+# define EXPRESSION28 "NumInt OpRel NumFlot" //D
+# define EXPRESSION29 "ParenAbre NumInt OpRel NumInt ParenCerra" //D
+# define EXPRESSION30 "ParenAbre NumFlot OpRel NumFlot ParenCerra" //D
+# define EXPRESSION31 "ParenAbre NumFlot OpRel NumInt ParenCerra" //D
+# define EXPRESSION32 "ParenAbre NumInt OpRel NumFlot ParenCerra"  //D
 //condicionales if 
 # define CONDITIONAL "if ParenAbre NumInt OpRel NumInt ParenCerra" //D
 # define CONDITIONAL2 "if ParenAbre NumInt OpRel NumFlot ParenCerra" //D
@@ -84,7 +100,7 @@ void stringTokens(string &e, vector<string> v){
 }
 
 bool semantico(string line){
-    vector<string> rules = {DECLARATIONINT, DECLARATIONFLOAT, DECLARATIONSTRING, DECLARATIONSTRING2, DECLARATIONLIBRARY, DECLARATIONLIBRARY2, EXPRESSION, EXPRESSION2, EXPRESSION3, EXPRESSION4, EXPRESSION5, EXPRESSION6, EXPRESSION7, EXPRESSION8, EXPRESSION9, EXPRESSION10, EXPRESSION11, EXPRESSION12, EXPRESSION13, EXPRESSION14, EXPRESSION15, EXPRESSION16, CONDITIONAL, CONDITIONAL2, CONDITIONAL3, CONDITIONAL4, CONDITIONAL5, CONDITIONAL6, CONDITIONAL7, CONDITIONAL8, CONDITIONAL9, CICLOFOR, CICLOFOR2, CICLOWHILE, CICLOWHILE2, CICLOWHILE3};
+    vector<string> rules = {DECLARATIONINT, DECLARATIONFLOAT, DECLARATIONSTRING, DECLARATIONSTRING2, DECLARATIONLIBRARY, DECLARATIONLIBRARY2, EXPRESSION, EXPRESSION2, EXPRESSION3, EXPRESSION4, EXPRESSION5, EXPRESSION6, EXPRESSION7, EXPRESSION8, EXPRESSION9, EXPRESSION10, EXPRESSION11, EXPRESSION12, EXPRESSION13, EXPRESSION14, EXPRESSION15, EXPRESSION16, EXPRESSION17, EXPRESSION18, EXPRESSION19, EXPRESSION20, EXPRESSION21, EXPRESSION22, EXPRESSION23, EXPRESSION24, EXPRESSION25, EXPRESSION26, EXPRESSION27, EXPRESSION28, EXPRESSION29, EXPRESSION30, EXPRESSION31, EXPRESSION32, CONDITIONAL, CONDITIONAL2, CONDITIONAL3, CONDITIONAL4, CONDITIONAL5, CONDITIONAL6, CONDITIONAL7, CONDITIONAL8, CONDITIONAL9, CICLOFOR, CICLOFOR2, CICLOWHILE, CICLOWHILE2, CICLOWHILE3};
     bool correct = false;
     string tokensStr = "";
     vector<string> dataParsed;
